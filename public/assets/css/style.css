@@ -424,9 +424,10 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 40vh; /*Atur Ketinggian Carousel di sini*/
   background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
   position: relative;

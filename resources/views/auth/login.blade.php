@@ -8,7 +8,7 @@
             <img class="my-4" src="{{ asset('assets/img/unsri.png') }}" alt="" width="150" height="150">
         </h1>
         @include('auth.passwords.message')
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <h1 class="h3 mb-3 fw-normal">{{ __('Login') }}</h1>
         <div class="form-floating">
         <input name="email" type="email" class="form-control @error('email') is-invalid @enderror" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">{{ __('Email address') }}</label>
@@ -26,11 +26,11 @@
             </label>
         </div>
         <button class="btn btn-info w-100 py-2" type="submit"><strong class="text-light">{{ __('Login') }}</strong></button>
-        @if (Route::has('password.request'))
+        {{-- @if (Route::has('password.request'))
             <a class="btn btn-link" href="{{ route('password.request') }}">
                 {{ __('Lupa kata sandi?') }}
             </a>
-        @endif
+        @endif --}}
     </form>
 </main>
 @endsection

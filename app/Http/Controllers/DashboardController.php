@@ -23,4 +23,12 @@ class DashboardController extends Controller
     public function edit(Daftar $daftar){
         return view('admin.editdp', compact('daftar'));
     }
+
+    public function users(){
+        return view('admin.users.index');
+    }
+
+    public function profile(){
+        return view('admin.users.profile');
+    }
 }

@@ -3,22 +3,19 @@
       <div class="section-title my-5">
         <h2>{{ $title }}</h2>
         <div class="row mb-2">
-            <div class="col">
+            <div class="col-md-4">
                 <input type="text" class="form-control form-control-sm" placeholder="Pencarian..." wire:model.live='search'>
             </div>
-            {{-- <div class="col">
-                <input type="text" class="form-control form-control-sm" placeholder="Pencarian...">
-            </div> --}}
         </div>
         <div class="table-responsive">
           <table class="table table-striped text-start">
             <thead>
               <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Nama</th>
-                <th scope="col">Jenis Kelamin</th>
-                <th scope="col">Tempat, Tanggal Lahir</th>
-                <th scope="col">Opsi</th>
+                <th scope="col">{{ __('No.') }}</th>
+                <th scope="col">{{ __('Nama') }}</th>
+                <th scope="col">{{ __('Jenis Kelamin') }}</th>
+                <th scope="col">{{ __('Tempat, Tanggal Lahir') }}</th>
+                <th scope="col">{{ __('Opsi') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -36,7 +33,7 @@
               </tr>
               @empty
               <tr>
-                <td>Data tidak ada.</td>
+                <td>{{ __('Data tidak ada.') }}</td>
               </tr>
               @endforelse
             </tbody>
@@ -46,4 +43,4 @@
       </div>
     </div>
     @include('layouts.script')
-  </section>
+</section>

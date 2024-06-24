@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('content')
 <main class="form-signin w-100 m-auto mt-5">
@@ -26,4 +26,4 @@
     </form>
 </main>
 @endsection
-
+ --}}

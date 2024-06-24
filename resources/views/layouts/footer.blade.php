@@ -15,10 +15,10 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>2024</span></strong>. All Rights Reserved
+        &copy; {{ __('Copyright') }} <strong><span>{{ __('2024') }}</span></strong>. {{ __('All Rights Reserved') }}
       </div>
       <div class="credits">
-        Designed by <a href="#">Jendral Bumi Sagara</a>
+        {{ __('Designed by') }} <a href="#">{{ __('Jendral Bumi Sagara') }}</a>
       </div>
     </div>
   </footer>

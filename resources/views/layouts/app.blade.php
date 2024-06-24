@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Network Registration') }}</title>
     <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
@@ -31,5 +30,16 @@
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/sweet-alert.js') }}"></script>
+    @if(session('success'))
+    <script>
+        Swal.fire({
+            title: 'Sukses!',
+            text: "{{ session('success') }}",
+            icon: 'success',
+            confirmButtonColor: '#228B22',
+            confirmButtonText: 'Ok',
+        });
+    </script>
+    @endif
 </body>
 </html>

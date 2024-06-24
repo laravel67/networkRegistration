@@ -2,8 +2,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Kontak</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>{{ __('Kontak') }}</h2>
+        <p>{{ __('Hubungi Kami Melalui  Kontak Yang Tersedia.') }}</p>
       </div>
 
     </div>
@@ -22,24 +22,24 @@
             <div class="col-md-12">
               <div class="info-box">
                 <i class="bx bx-map"></i>
-                <h3>Alamat Kami</h3>
+                <h3>{{ __('Alamat Kami') }}</h3>
                 <p>
-                    Jalan Srijaya Negara, Bukit Lama, Kec. Ilir Barat I, Kota Palembang, Sumater Selatan (30139)
+                    {{ __('Jalan Srijaya Negara, Bukit Lama, Kec. Ilir Barat I, Kota Palembang, Sumater Selatan (30139)') }}
                 </p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box mt-4">
                 <i class="bx bx-envelope"></i>
-                <h3>Alamat Email</h3>
-                <p>jendralbumisagara@gmail.com</p>
+                <h3>{{ __('Alamat Email') }}</h3>
+                <p>{{ __('jendralbumisagara@gmail.com') }}</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box mt-4">
                 <i class="bx bx-phone-call"></i>
-                <h3>Hubungi kami</h3>
-                <p>+62 896 2006 6462</p>
+                <h3>{{ __('Hubungi kami') }}</h3>
+                <h6><a href="https://wa.link/pf16ts" target="__blank">{{ __('+62 896 2006 6462') }}</a></h6>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
         </div>
 
         <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required="">
@@ -62,12 +62,7 @@
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="7" placeholder="Message" required=""></textarea>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Kirim Pesan</button></div>
+            <div class="text-center my-3"><button type="submit">{{ __('Kirim Pesan') }}</button></div>
           </form>
         </div>
       </div>
